@@ -1,0 +1,73 @@
+/* Root Elements */
+:root {
+  --time-duration: 9s;
+}
+
+/* Body */
+body {
+  margin: 0px;
+}
+
+body::-webkit-scrollbar {
+  overflow: hidden;
+  display: none;
+}
+
+/* H2 tag */
+h2 {
+  margin: 0px;
+}
+
+/* Slider elements */
+#rod-one {
+  position: absolute;
+  top: 0%;
+  background-color: firebrick;
+  border: 1px solid black;
+  width: 15vw;
+  box-sizing: border-box;
+  border-radius: 20px;
+  height: 3vh;
+  text-align: center;
+}
+
+#rod-two {
+  position: absolute;
+  bottom: 0%;
+  background-color: darkcyan;
+  border-radius: 20px;
+  border: 1px solid black;
+  width: 15vw;
+  box-sizing: border-box;
+  height: 3vh;
+  text-align: center;
+}
+
+/* Ball */
+#ball {
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  border-radius: 50%;
+  background-image: radial-gradient(red 0%, black 221%);
+}
+
+.animate-top-right {
+  transition: transform linear var(--time-duration);
+  transform: translateX(2000px) translateY(-2000px);
+}
+
+.animate-bottom-right {
+  transition: transform linear var(--time-duration);
+  transform: translateX(2000px) translateY(2000px);
+}
+
+.animate-top-left {
+  transition: transform linear var(--time-duration);
+  transform: translateX(-2000px) translateY(-2000px);
+}
+
+.animate-bottom-left {
+  transition: transform linear var(--time-duration);
+  transform: translateX(-2000px) translateY(2000px);
+}
